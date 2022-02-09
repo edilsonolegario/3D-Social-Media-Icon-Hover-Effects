@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Social Media Icon Hover Effects</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- 
+        https://cdnjs.com/libraries/font-awesome 
+        https://fontawesome.com/v4/icons/
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--
+        https://micku7zu.github.io/vanilla-tilt.js/
+    -->
+</head>
+<body>
+    <div class="container">
+        <div class="socialBox">
+            <section class="socialMidia">
+                <ul class="sci">
+                    <li data-text="Facebook" data-color="#1877f2">
+                        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li data-text="Youtube" data-color="#ff0000">
+                        <a href="#" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li data-text="Twitter" data-color="#0099ff">
+                        <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li data-text="Instagram" data-color="linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)">
+                        <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
+</html>
